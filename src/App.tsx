@@ -8,6 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/:id" element={<HomePage />} />
       </Routes>
     </Router>
   );
