@@ -12,8 +12,6 @@ export default function HomePage() {
   const { pathname } = useLocation();
   const data = useContentful(pathname);
 
-  console.log(data);
-
   return (
     <Layout>
       <Header />

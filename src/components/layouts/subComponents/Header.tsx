@@ -25,7 +25,12 @@ export default function Header() {
 
       <Box display="grid" gridAutoFlow="column" gap={1}>
         {navLinks.map(({ to, label }) => (
-          <LinkStyled $isActive={pathname === to} key={label} to={to}>
+          <LinkStyled
+            $isActive={pathname === to}
+            key={label}
+            to={to}
+            reloadDocument
+          >
             {label}
           </LinkStyled>
         ))}
