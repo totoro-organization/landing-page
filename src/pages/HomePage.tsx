@@ -3,6 +3,7 @@ import Button from "../components/base/Button";
 import { Layout, Main } from "../components/layouts/GlobalLayout";
 import Header from "../components/layouts/subComponents/Header";
 import HeroSection from "../components/sections/HeroSection/HeroSection";
+import OrganizationPartners from "../components/sections/OrganizationPartners/OrganizationPartners";
 import ProductSection from "../components/sections/ProductSection/ProductSection";
 import useContentful from "../hooks/useContentful";
 
@@ -35,6 +36,8 @@ export default function HomePage() {
           }
           direction={data?.firstSectionIsRight ? "right" : "left"}
         />
+
+        <OrganizationPartners />
       </Main>
     </Layout>
   );

@@ -25,11 +25,7 @@ export default function ProductSection({
         {button}
       </Box>
 
-      <div
-        style={{ minWidth: "40rem", height: "20rem", backgroundColor: "red" }}
-      >
-        Ajouter image
-      </div>
+      <ImageWrapper>Ajouter image</ImageWrapper>
     </Container>
   );
 }
@@ -50,5 +46,15 @@ const Container = styled.section<{ $direction?: "left" | "right" }>`
     justify-content: space-between;
     flex-direction: ${({ $direction }) =>
       $direction === "right" ? "row" : "row-reverse"};
+  }
+`;
+
+const ImageWrapper = styled.div`
+  width: 100%;
+  height: 20rem;
+  background-color: red;
+
+  @media ${device.laptop} {
+    min-width: 40rem;
   }
 `;

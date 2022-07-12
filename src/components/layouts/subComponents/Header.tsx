@@ -35,15 +35,17 @@ export default function Header() {
 }
 
 const Container = styled.header`
+  width: 100%;
   display: flex;
   gap: 1rem;
   padding: var(--global-inner-spacing-section);
-  background-color: transparent;
+  background-color: ${({ theme }) => theme.colors.core.black.base};
   position: fixed;
   color: ${({ theme }) => theme.colors.core.white.base};
 
   @media ${device.tablet} {
     gap: 4rem;
+    background-color: transparent;
   }
 `;
 
