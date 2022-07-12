@@ -10,6 +10,7 @@
     "@types/node": "^16.11.41",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
+    "contentful": "^9.1.32",
     "contentful-management": "^10.8.0",
     "contentful-typescript-codegen": "^3.2.3",
     "react": "^18.2.0",
@@ -23,8 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "contentful-typescript-codegen": "contentful-typescript-codegen --output @types/contentful.d.ts"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
