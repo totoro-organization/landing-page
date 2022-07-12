@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import Button from "../components/base/Button";
 import { Layout, Main } from "../components/layouts/GlobalLayout";
+import Header from "../components/layouts/subComponents/Header";
 import HeroSection from "../components/sections/HeroSection/HeroSection";
 import ProductSection from "../components/sections/ProductSection/ProductSection";
 import useContentful from "../hooks/useContentful";
@@ -11,6 +12,8 @@ export default function HomePage() {
 
   return (
     <Layout>
+      <Header />
+
       <Main>
         <HeroSection
           title={data?.heroTitle}

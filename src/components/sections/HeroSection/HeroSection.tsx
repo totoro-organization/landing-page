@@ -37,7 +37,7 @@ const Container = styled.section`
   height: 80vh;
 
   @media ${device.tablet} {
-    height: 36rem;
+    height: 42rem;
     grid-gap: ${({ theme }) => theme.spacing[8]};
   }
 `;
