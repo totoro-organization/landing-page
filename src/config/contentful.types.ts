@@ -4,6 +4,7 @@ export type Path = {
 
 export type HeroFields = {
   heroTitle: string;
+  heroDescription?: string;
 };
 
 export type PageFields = { fields: Path & HeroFields };
