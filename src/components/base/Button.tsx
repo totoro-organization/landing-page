@@ -27,6 +27,12 @@ const buttonStyles = css`
   color: ${({ theme }) => theme.colors.core.white.base};
   border-radius: ${({ theme }) => theme.border.radius.md};
   padding: ${({ theme }) => theme.spacing[5]} ${({ theme }) => theme.spacing[6]};
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.brand.primary.dark};
+  }
 `;
 
 const StyledLink = styled(Link)`
