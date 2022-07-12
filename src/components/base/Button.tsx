@@ -22,6 +22,7 @@ const buttonStyles = css`
   all: unset;
   box-sizing: border-box;
   width: fit-content;
+  height: fit-content;
   background-color: ${({ theme }) => theme.colors.brand.primary.base};
   color: ${({ theme }) => theme.colors.core.white.base};
   border-radius: ${({ theme }) => theme.border.radius.md};
