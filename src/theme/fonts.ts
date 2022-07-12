@@ -5,11 +5,10 @@ export const fonts = {
     xl: "2.25rem",
   },
 
-  // TODO: fix me with 400/500/600 weight
   weight: {
-    regular: "Outfit-Regular",
-    medium: "Outfit-Medium",
-    semiBold: "Outfit-SemiBold",
-    extraBold: "Outfit-ExtraBold",
+    regular: 400,
+    medium: 500,
+    semiBold: 600,
+    extraBold: 800,
   },
 };
