@@ -10,7 +10,7 @@ export default function useContentful(path: string) {
       .getEntries()
       .then((entry) => setData(entry.items))
       .catch((err) => console.error(err));
-  }, []);
+  }, [path]);
 
   return data?.filter((item: PageFields) => item.fields.path === path)[0]
     .fields;
