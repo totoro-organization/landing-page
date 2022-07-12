@@ -11,6 +11,8 @@ export default function HomePage() {
   const { pathname } = useLocation();
   const data = useContentful(pathname);
 
+  console.log(data);
+
   return (
     <Layout>
       <Header />
@@ -29,6 +31,7 @@ export default function HomePage() {
         <ProductSection
           title={data?.firstSectionTitle}
           description={data?.firstSectionDescription}
+          screen={data?.firstSectionImage.fields.file.url}
           button={
             <Button to={data?.heroButtonLink || ""}>
               {data?.heroButtonLabel}

@@ -4,12 +4,8 @@ import { device } from "../../theme/devices";
 export const Layout = styled.div`
   --global-inner-spacing-section: 1rem;
 
-  @media ${device.tablet} {
-    --global-inner-spacing-section: 2rem 4rem;
-  }
-
   @media ${device.laptop} {
-    --global-inner-spacing-section: 4rem 16rem;
+    --global-inner-spacing-section: 4rem 12rem;
   }
 
   display: flex;

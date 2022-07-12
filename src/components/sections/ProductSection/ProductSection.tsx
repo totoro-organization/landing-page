@@ -8,24 +8,28 @@ export type ProductSectionProps = {
   title: string;
   description: string;
   button: ReactNode;
+  screen: string;
 };
 
 export default function ProductSection({
   direction = "right",
   title,
   description,
+  screen,
   button,
 }: ProductSectionProps) {
   return (
     <Container $direction={direction}>
-      <Box display="grid" gap={2}>
+      <Box display="grid" gap={2} alignContent="center">
         <h2>{title}</h2>
         <p>{description}</p>
 
         {button}
       </Box>
 
-      <ImageWrapper>Ajouter image</ImageWrapper>
+      <ImageWrapper>
+        <img src={screen} alt={`screen-${screen}`} />
+      </ImageWrapper>
     </Container>
   );
 }
@@ -51,10 +55,8 @@ const Container = styled.section<{ $direction?: "left" | "right" }>`
 
 const ImageWrapper = styled.div`
   width: 100%;
-  height: 20rem;
-  background-color: red;
 
   @media ${device.laptop} {
-    min-width: 40rem;
+    min-width: 30rem;
   }
 `;
