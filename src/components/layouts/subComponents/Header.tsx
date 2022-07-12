@@ -45,7 +45,6 @@ const Container = styled.header`
 
   @media ${device.tablet} {
     gap: 4rem;
-    background-color: transparent;
   }
 `;
 
