@@ -41,17 +41,11 @@ export default function HomePage() {
 
         <OrganizationPartners />
 
-        {/* TODO: Add second section */}
         <ProductSection
-          title={data?.firstSectionTitle}
-          description={data?.firstSectionDescription}
-          screen={data?.firstSectionImage.fields.file.url}
-          button={
-            <Button to={data?.heroButtonLink || ""}>
-              {data?.heroButtonLabel}
-            </Button>
-          }
-          direction={data?.firstSectionIsRight ? "right" : "left"}
+          title={data?.secondSectionTitle}
+          description={data?.secondSectionDescription}
+          screen={data?.secondSectionImage.fields.file.url}
+          direction={data?.secondSectionIsRight ? "right" : "left"}
         />
       </Main>
 
