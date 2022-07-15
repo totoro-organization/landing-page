@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import Button from "../components/base/Button";
+import HeadTags from "../components/brand/HeadTags";
 import { Layout, Main } from "../components/layouts/GlobalLayout";
 import Footer from "../components/layouts/subComponents/Footer";
 import Header from "../components/layouts/subComponents/Header";
@@ -18,6 +19,14 @@ export default function HomePage() {
 
   return (
     <Layout>
+      <HeadTags
+        title={
+          isHome
+            ? "Des missions de bénévolat disponibles près de chez toi !"
+            : "Devenir partenaire"
+        }
+        link={pathname}
+      />
       <Header />
 
       <Main>
