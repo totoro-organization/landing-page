@@ -45,7 +45,9 @@ const Container = styled.header`
   gap: 1rem;
   padding: var(--global-inner-spacing-section);
   background-color: ${({ theme }) => theme.colors.core.black.base};
-  position: fixed;
+  position: sticky;
+  top: 0;
+  z-index: 2;
   color: ${({ theme }) => theme.colors.core.white.base};
 
   @media ${device.tablet} {

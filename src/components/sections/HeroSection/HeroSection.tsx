@@ -34,10 +34,10 @@ const Container = styled.section`
   color: ${({ theme }) => theme.colors.core.white.base};
   padding: var(--global-inner-spacing-section);
   text-align: center;
-  height: 80vh;
+  height: 75vh;
 
   @media ${device.tablet} {
-    height: 42rem;
+    height: 35rem;
     grid-gap: ${({ theme }) => theme.spacing[8]};
   }
 `;
