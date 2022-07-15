@@ -31,8 +31,8 @@ export default function OrganizationPartners() {
       <h2>Les associations qui nous font confiance</h2>
 
       <PartnersList>
-        {organizationLogos.map(({ logo, alt }) => (
-          <img src={logo} alt={alt} />
+        {organizationLogos.map(({ logo, alt }, index) => (
+          <img key={index} src={logo} alt={alt} />
         ))}
       </PartnersList>
     </Container>
