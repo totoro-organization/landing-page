@@ -6,7 +6,7 @@ import Box from "../../base/Box";
 export type ProductSectionProps = {
   direction?: "left" | "right";
   title: string;
-  description: string;
+  description: any;
   button?: ReactNode;
   screen: string;
 };

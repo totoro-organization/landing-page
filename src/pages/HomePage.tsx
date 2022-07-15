@@ -7,6 +7,7 @@ import BecomePartnerSection from "../components/sections/BecomePartnerSection/Be
 import HeroSection from "../components/sections/HeroSection/HeroSection";
 import OrganizationPartners from "../components/sections/OrganizationPartners/OrganizationPartners";
 import ProductSection from "../components/sections/ProductSection/ProductSection";
+import convertLineBreaks from "../components/utils/convertLineBreak";
 import useContentful from "../hooks/useContentful";
 
 export default function HomePage() {
@@ -32,7 +33,7 @@ export default function HomePage() {
 
         <ProductSection
           title={data?.firstSectionTitle}
-          description={data?.firstSectionDescription}
+          description={convertLineBreaks(data?.firstSectionDescription, true)}
           screen={data?.firstSectionImage.fields.file.url}
           button={
             <Button to={data?.heroButtonLink || ""}>
