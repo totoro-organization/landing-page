@@ -7,7 +7,7 @@ export type ProductSectionProps = {
   direction?: "left" | "right";
   title: string;
   description: string;
-  button: ReactNode;
+  button?: ReactNode;
   screen: string;
 };
 
