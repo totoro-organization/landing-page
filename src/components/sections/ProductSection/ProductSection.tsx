@@ -58,5 +58,6 @@ const ImageWrapper = styled.div`
 
   @media ${device.laptop} {
     min-width: 30rem;
+    max-width: 30rem;
   }
 `;
